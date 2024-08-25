@@ -1,8 +1,0 @@
-numpy
-scikit-learn
-matplotlib
-pandas
-seaborn
-
-
-
