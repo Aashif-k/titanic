@@ -24,13 +24,13 @@ def main():
     </div>
     """
   st.markdown(html_temp,unsafe_allow_html=True)
-  Pclass=st.text_input("pclass","Type Here")
-  Sex=st.text_input("sex","Type Here")
-  Age=st.text_input("age","Type Here")
-  SibSp=st.text_input("sibsp","Type Here")
-  Parch=st.text_input("parch","Type Here")
-  Fare=st.text_input("fare","Type Here")
-  Embarked=st.text_input("embarked","Type Here")
+  Pclass=st.number_input("pclass","Type Here")
+  Sex=st.number_input("sex","Type Here")
+  Age=st.number_input("age","Type Here")
+  SibSp=st.number_input("sibsp","Type Here")
+  Parch=st.number_input("parch","Type Here")
+  Fare=st.number_input("fare","Type Here")
+  Embarked=st.number_input("embarked","Type Here")
   result=""
   if st.button("predict"):
     result=predic(Pclass,Sex,Age,SibSp,Parch,Fare,Embarked)
