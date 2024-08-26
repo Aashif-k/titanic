@@ -18,7 +18,7 @@ def predic(Pclass,Sex,Age,SibSp,Parch,Fare,Embarked):
 
 def main():
   st.title("titanic prediction")
-    st.subheader("Pclass:")
+  st.subheader("Pclass:")
   Pclass=st.slider("Select the class",min_value=1.0,max_value=3.0,step=1.0)
   Sex=st.slider("Sex",min_value=0.0,max_value=1.0,step=1.0)
   Age=st.number_input("age")
