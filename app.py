@@ -19,12 +19,12 @@ def predic(Pclass,Sex,Age,SibSp,Parch,Fare,Embarked):
 def main():
   st.title("titanic prediction")
   Pclass=st.slider("pclass",min_value=1.0,max_value=3.0,step=1.0)
-  Sex=st.number_input("sex")
+  Sex=st.slider("Sex",min_value=0.0,max_value=1.0,step=1.0)
   Age=st.number_input("age")
-  SibSp=st.number_input("sibsp")
-  Parch=st.number_input("parch")
+  SibSp=st.slider("SibSp",min_value=0.0,max_value=2.0,step=1.0)
+  Parch=st.slider("Parch",min_value=0.0,max_value=3.0,step=1.0)
   Fare=st.number_input("fare")
-  Embarked=st.number_input("embarked")
+  Embarked=st.slider("Embarked",min_value=0.0,max_value=2.0,step=1.0)
   result=""
   if st.button("predict"):
     result=predic(Pclass,Sex,Age,SibSp,Parch,Fare,Embarked)
