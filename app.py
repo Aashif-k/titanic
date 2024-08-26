@@ -18,7 +18,6 @@ def predic(Pclass,Sex,Age,SibSp,Parch,Fare,Embarked):
 
 def main():
   st.title("titanic prediction")
-  st.markdown(html_temp,unsafe_allow_html=True)
   Pclass=st.number_input("pclass")
   Sex=st.number_input("sex")
   Age=st.number_input("age")
