@@ -21,7 +21,7 @@ def main():
   st.subheader("Pclass:")
   Pclass=st.slider("Select the class",min_value=1.0,max_value=3.0,step=1.0)
   Sex=st.selectbox("Sex 0 for female and 1 for male",options=[1,0])
-  Age=st.number_input("age")
+  Age=st.int_input("age")
   SibSp=st.slider("SibSp",min_value=0.0,max_value=2.0,step=1.0)
   Parch=st.slider("Parch",min_value=0.0,max_value=3.0,step=1.0)
   Fare=st.number_input("fare")
