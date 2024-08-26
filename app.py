@@ -18,19 +18,14 @@ def predic(Pclass,Sex,Age,SibSp,Parch,Fare,Embarked):
 
 def main():
   st.title("titanic prediction")
-  html_temp = """
-    <div style="background-color:tomato;padding:10px">
-    <h2 style="color:white;text-align:center;">Streamlit Bank Authenticator ML App </h2>
-    </div>
-    """
   st.markdown(html_temp,unsafe_allow_html=True)
-  Pclass=st.number_input("pclass","Type Here")
-  Sex=st.number_input("sex","Type Here")
-  Age=st.number_input("age","Type Here")
-  SibSp=st.number_input("sibsp","Type Here")
-  Parch=st.number_input("parch","Type Here")
-  Fare=st.number_input("fare","Type Here")
-  Embarked=st.number_input("embarked","Type Here")
+  Pclass=st.number_input("pclass")
+  Sex=st.number_input("sex")
+  Age=st.number_input("age")
+  SibSp=st.number_input("sibsp")
+  Parch=st.number_input("parch")
+  Fare=st.number_input("fare")
+  Embarked=st.number_input("embarked")
   result=""
   if st.button("predict"):
     result=predic(Pclass,Sex,Age,SibSp,Parch,Fare,Embarked)
