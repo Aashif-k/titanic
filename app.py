@@ -20,7 +20,11 @@ def main():
   st.title("titanic prediction")
   st.subheader("Pclass:")
   Pclass=st.slider("Select the class",min_value=1.0,max_value=3.0,step=1.0)
-  Sex=st.selectbox("Sex 0 for female and 1 for male",options=[1,0])
+  Text=st.selectbox("Select Sex",options=['F','M'])
+  if Text=='F':
+      Sex=0
+  else:
+      Sex=1
   Age=st.number_input("age",step=1)
   SibSp=st.slider("SibSp",min_value=0.0,max_value=2.0,step=1.0)
   Parch=st.slider("Parch",min_value=0.0,max_value=3.0,step=1.0)
