@@ -19,7 +19,7 @@ def predic(Pclass,Sex,Age,SibSp,Parch,Fare,Embarked):
 def main():
   st.title("titanic prediction")
   st.subheader("Pclass:")
-  Pclass=st.slider("Select the class",min_value=1.0,max_value=3.0,step=1.0)
+  Pclass=st.number_input("Select the class",step=1.0)
   Text=st.selectbox("Select Sex",options=['F','M'])
   if Text=='F':
       Sex=0
