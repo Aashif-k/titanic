@@ -29,7 +29,13 @@ def main():
   SibSp=st.slider("SibSp",min_value=0.0,max_value=2.0,step=1.0)
   Parch=st.slider("Parch",min_value=0.0,max_value=3.0,step=1.0)
   Fare=st.number_input("fare")
-  Embarked=st.slider("Embarked",min_value=0.0,max_value=2.0,step=1.0)
+  Emb=st.selectbox("Select Embarked",options=['Q','S','C'])
+  if Emb=='Q':
+    Embarked=0
+  elif Emb=='S':
+    Embarked=1
+  else:
+    Embarked=2
   result=""
   if st.button("predict"):
     result=predic(Pclass,Sex,Age,SibSp,Parch,Fare,Embarked)
